@@ -1,0 +1,17 @@
+startup_message off
+vbell off
+altscreen on
+autodetach on
+
+termcapinfo rxvt-unicode ti@:te@
+terminfo    rxvt-unicode ti@:te@:
+term        screen-256color
+
+bind V split -v
+
+caption splitonly '%{= kb} %n %t'
+hardstatus alwayslastline '%{= kG} %{c}%H%{g}%= %{= kw}%-w%{r}%n %t%?(%u)%?%{r}%{w}%?%+w%?%?%= %{g}%{B}%m/%d %{G}%C%A '
+
+screen -t * 0
+screen -t TUNES 1
+screen -t RANGER 2
