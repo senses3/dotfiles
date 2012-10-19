@@ -14,4 +14,5 @@ hardstatus alwayslastline '%{= kG} %{c}%H%{g}%= %{= kw}%-w%{r}%n %t%?(%u)%?%{r}%
 
 screen -t * 0
 screen -t TUNES 1
-screen -t RANGER 2
+screen -t VIM 2
+screen -t RANGER 3
