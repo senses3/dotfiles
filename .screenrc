@@ -7,8 +7,6 @@ termcapinfo rxvt-unicode ti@:te@
 terminfo    rxvt-unicode ti@:te@:
 term        screen-256color
 
-bind V split -v
-
 caption splitonly '%{= kb} %n %t'
 hardstatus alwayslastline '%{= kG} %{c}%H%{g}%= %{= kw}%-w%{r}%n %t%?(%u)%?%{r}%{w}%?%+w%?%?%= %{g}%{B}%m/%d %{G}%C%A '
 
