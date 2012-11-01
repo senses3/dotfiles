@@ -9,3 +9,6 @@ alias v='vim'
 alias www='cd /var/www'
 alias whatsmyip='lynx -dump checkip.dyndns.org'
 alias minecraft='padsp java -Xmx1024M -Xms256M -Djava.net.preferIPv4Stack=true -cp /opt/minecraft/client/minecraft.jar net.minecraft.LauncherFrame &'
+
+# mirrors sites with wget, example 'siteget . www.url.com'
+alias siteget='wget --mirror -p --convert-links -P'
