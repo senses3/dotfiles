@@ -1,0 +1,23 @@
+background no
+use_xft yes
+out_to_console yes
+out_to_x no
+own_window no
+update_interval 2
+total_run_times 0
+double_buffer yes
+border_inner_margin 0
+border_outer_margin 0
+use_spacer none
+if_up_strictness address
+short_units yes
+
+TEXT
+^fg(\#A6A6DE)${mpd_smart} \
+^fg(\#808080): \
+^fg(\#FFAF5F)${uptime} \
+^fg(\#808080): \
+^fg(\#A5CAEF)${execi 10800 pacman -Qu | wc -l} PKG \
+^fg(\#808080): \
+^fg(\#87AF5F)${time %m/%d/%Y} \
+^fg(\#C7F09F)${time %I:%M%p}
