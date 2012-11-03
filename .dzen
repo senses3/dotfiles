@@ -1,0 +1,4 @@
+#!/bin/sh
+
+BG=#151515
+conky | dzen2 -ta r -x 314 -y 1 -w 1600 -bg $BG -fn 'terminus-12'
