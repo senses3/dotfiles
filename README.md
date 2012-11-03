@@ -1,3 +1,5 @@
 #dotfiles
 
-my arch dotfiles :wink2:
+my arch dotfiles
+
+:smiling_imp:
