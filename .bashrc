@@ -5,7 +5,11 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-PS1='\[\033[0;34m\][\u] \[\033[00;32m\][\W]\[\033[0;35m\]\[\033[0m\] '
+source ~/.git-prompt.sh
+
+export GIT_PS1_SHOWDIRTYSTATE=1 GIT_PS1_SHOWUNTRACKEDFILES=1 GIT_PS1_SHOWSTASHSTATE=1 GIT_PS1_SHOWUPSTREAM="AUTO"
+
+PS1='\[\033[0;34m\][\u] \[\033[00;32m\][\W]\[\033[0;35m\]$(__git_ps1 " (%s)")\[\033[0m\] '
 
 export PATH=$PATH:~/.gem/ruby/1.9.1/bin
 export PATH=~/bin:$PATH
