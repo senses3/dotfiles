@@ -4,6 +4,7 @@ alias ls='ls --color=auto'
 alias l='ls -CF'
 alias pacup='sudo pacman-color -Syu'
 alias pacadd='sudo pacman-color -S'
+alias grep="grep --color=auto"
 alias tunes='ncmpcpp'
 alias v='vim'
 alias m='mutt'
